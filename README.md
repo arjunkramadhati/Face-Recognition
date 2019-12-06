@@ -18,3 +18,11 @@ Face Detection: MTCNN Face Detection algorithm is used
 Alignment: Custom built face aligner which can differentiate the left profile - center profile - right profile of the face
 128 Face Feature Extractor: The state-of-the-art Tensorflow model of ResNet Inception V1 128 Face Feature Extractor  
 
+# Training
+Right from the start, emphasis was given on planning to make the face training process as easy as possible. The face registration tool is in a seperate github repository. 
+
+# Implementation and Results
+
+The face-rec algorithm is extremely accurate for frontal face recognition. Although the side face recognition is a bit glitchy, it proved to be better than most other algorithms. Training with more of the side face profiles will increase the accuracy. 
+
+
