@@ -22,7 +22,7 @@ Alignment: Custom built face aligner which can differentiate the left profile - 
 Right from the start, emphasis was given on planning to make the face training process as easy as possible. The face registration tool is in a seperate github repository. 
 
 # Implementation and Results
-
 The face-rec algorithm is extremely accurate for frontal face recognition. Although the side face recognition is a bit glitchy, it proved to be better than most other algorithms. Training with more of the side face profiles will increase the accuracy. 
 
-
+# EXPERIMENTAL: Face Tracking
+To reduce the load on the already stressed processor, a face tracking module was used. The idea was to recognise the face and start tracking it, instead of recognising it always. The tracker was found to be very unreliable in lighting conditions that was not anything but ideal. 
