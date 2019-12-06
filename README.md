@@ -16,7 +16,9 @@ Coming to the method used to recognise faces a five step solution was adopted:
 
 Face Detection: MTCNN Face Detection algorithm is used
 Alignment: Custom built face aligner which can differentiate the left profile - center profile - right profile of the face
-128 Face Feature Extractor: The state-of-the-art Tensorflow model of ResNet Inception V1 128 Face Feature Extractor  
+128 Face Feature Extractor: The state-of-the-art Tensorflow model of ResNet Inception V1 128 Face Feature Extractor 
+
+NOTE: When the code is run the first tinme, it does not load the heavy face feature extractor until the first face is detected. After the first face is detected, the code loads the model into the RAM and this puts sudden load on the edge device and hence making things glitchy. To avoid this, the code first loops over images of very easily detectable faces. Hence, the code sort of pre loads the models even before the first face is detected from the actual live stream. 
 
 # Training
 Right from the start, emphasis was given on planning to make the face training process as easy as possible. The face registration tool is in a seperate github repository. 
